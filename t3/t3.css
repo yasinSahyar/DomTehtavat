@@ -1,0 +1,66 @@
+
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Heading style */
+h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for device information */
+#target {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Paragraph styling for each info item */
+#target p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+#target p:last-child {
+  border-bottom: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  #target {
+      width: 100%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  #target p {
+      font-size: 1rem;
+  }
+}

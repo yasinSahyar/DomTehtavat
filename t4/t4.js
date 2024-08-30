@@ -771,3 +771,26 @@ const restaurants = [
 ];
 
 // your code here
+
+
+// Get a reference to the table
+const table = document.querySelector("table");
+
+// Loop through each restaurant and create a row
+restaurants.forEach(restaurant => {
+  // Create a new table row
+  const row = document.createElement("tr");
+
+  // Create and append the Name cell
+  const nameCell = document.createElement("td");
+  nameCell.textContent = restaurant.name;
+  row.appendChild(nameCell);
+
+  // Create and append the Address cell
+  const addressCell = document.createElement("td");
+  addressCell.textContent = `${restaurant.address}, ${restaurant.postalCode}, ${restaurant.city}`;
+  row.appendChild(addressCell);
+
+  // Append the row to the table
+  table.appendChild(row);
+});
